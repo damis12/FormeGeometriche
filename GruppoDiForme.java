@@ -19,7 +19,7 @@ public class GruppoDiForme implements Forme{
 
 	@Override
 	public void trasla(int x, int y) {
-		
+		//todo
 	}
 
 
