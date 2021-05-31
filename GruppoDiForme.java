@@ -27,5 +27,13 @@ public class GruppoDiForme implements Forme{
 //		c1.centro.setX(c1.centro.getX() + x);
 //		c1.centro.setY(c1.centro.getY() + y);
 	}
+	
+	public void aggiungiForma(Forme forma) {
+		//deve essere in grado di aggiungere forme nuove al gruppo
+		GruppoDiForme[] formeGeometriche = new GruppoDiForme[10];
+		for (GruppoDiForme gruppoDiForme : formeGeometriche) {
+			//devo aggiungere la 'forma'
+		}
+	}
 
 }
