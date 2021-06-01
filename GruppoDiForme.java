@@ -24,6 +24,7 @@ public class GruppoDiForme implements Forme{
 //		Cerchio c1 = new Cerchio(5, new Punto(-1, -3), "verde");
 //		c1.centro.setX(c1.centro.getX() + x);
 //		c1.centro.setY(c1.centro.getY() + y);
+
 	}
 	
 	public void aggiungiForma(GruppoDiForme forma) {
