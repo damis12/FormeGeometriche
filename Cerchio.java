@@ -2,12 +2,13 @@ package geometry_tools;
 
 public class Cerchio implements Forme{
 	
+	//parametri della classe Cerchio
 	private int raggio;
 	private Punto centro;
 	private String colore;
 
-	//Constructor
-	public Cerchio(int raggio, Punto centro, String colore) {
+	//Coostruttore della classe Cerchio
+	public Cerchio(Punto centro, int raggio, String colore) {
 		this.raggio = raggio;
 		this.centro = new Punto(centro.getX(), centro.getY());
 		this.colore = colore;
@@ -19,7 +20,7 @@ public class Cerchio implements Forme{
 		this.centro.setY(this.centro.getY() + y);	
 	}
 	
-	//Getters and Setters raggio, colore
+	/////////Getters and Setters di raggio, colore, centro/////////
 	public int getRaggio() {
 		return raggio;
 	}
@@ -32,10 +33,14 @@ public class Cerchio implements Forme{
 	public void setColore(String colore) {
 		this.colore = colore;
 	}
+	public Punto getCentro() {
+		return centro;
+	}	
+	/////////Getters and Setters di raggio, colore, centro/////////
 
 	@Override
 	public String toString() {
-		return "Cerchio [raggio=" + raggio + ", centro=" + centro + ", colore=" + colore + "]";
-	}	
+		return "Cerchio: [centro=" + centro.toString() + ", raggio=" + raggio + ", colore=" + colore + "]";
+	}
 	
 }

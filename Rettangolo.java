@@ -2,13 +2,14 @@ package geometry_tools;
 
 public class Rettangolo implements Forme{
 
+	//parametri della classe Rettangolo
 	private int altezza;
 	private int larghezza;
 	private Punto vertice;
 	private String colore;
 	
-	//Constructor
-	public Rettangolo(Punto vertice, int altezza, int larghezza, String colore) {
+	//Costruttore della classe Rettangolo
+	public Rettangolo(Punto vertice, int larghezza, int altezza, String colore) {
 		this.altezza = altezza;
 		this.larghezza = larghezza;
 		this.vertice = new Punto(vertice.getX(), vertice.getY());
@@ -21,7 +22,7 @@ public class Rettangolo implements Forme{
 		this.vertice.setY(this.vertice.getY() + y);
 	}
 
-	//Getters Setters altezza, colore, larghezza
+	//Getters Setters altezza, colore, larghezza, vertice//
 	public int getAltezza() {
 		return altezza;
 	}
@@ -45,10 +46,14 @@ public class Rettangolo implements Forme{
 	public void setColore(String colore) {
 		this.colore = colore;
 	}
+	public Punto getVertice() {
+		return vertice;
+	}
+	//Getters Setters altezza, colore, larghezza, vertice//
 
 	@Override
 	public String toString() {
-		return "Rettangolo: [altezza=" + altezza + ", larghezza=" + larghezza + ", vertice=" + vertice + ", colore="
+		return "Rettangolo: [altezza=" + altezza + ", larghezza=" + larghezza + ", vertice=" + vertice.toString() + ", colore="
 				+ colore + "]";
 	}
 
